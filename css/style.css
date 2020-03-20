@@ -1,0 +1,195 @@
+/***********************  
+********* Font *********
+************************/
+
+@font-face {
+  font-family: "ClasicaSlab";
+  src: url("fonts/LatinotypeClasicaSlab.eot") format("embedded-opentype"),
+    url("fonts/LatinotypeClasicaSlab.svg") format("svg"), url("fonts/LatinotypeClasicaSlab.ttf") format("truetype"),
+    url("fonts/LatinotypeClasicaSlab.woff") format("woff"), url("fonts/LatinotypeClasicaSlab.woff2") format("woff2");
+}
+@font-face {
+  font-family: "VolteBold";
+  src: url("fonts/VolteBold.eot") format("embedded-opentype"), url("fonts/VolteBold.svg") format("svg"),
+    url("fonts/VolteBold.ttf") format("truetype"), url("fonts/VolteBold.woff") format("woff"),
+    url("fonts/VolteBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "MarkSimonsonProximaNovaLight";
+  src: url("fonts/MarkSimonsonProximaNovaLight.eot") format("embedded-opentype"),
+    url("fonts/MarkSimonsonProximaNovaLight.svg") format("svg"),
+    url("fonts/MarkSimonsonProximaNovaLight.ttf") format("truetype"),
+    url("fonts/MarkSimonsonProximaNovaLight.woff") format("woff"),
+    url("fonts/MarkSimonsonProximaNovaLight.woff2") format("woff2");
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a,
+a:after,
+li {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+body {
+  font-family: "ClasicaSlab";
+  background: black;
+}
+
+.imgfit {
+  height: 100%;
+  width: 100%;
+}
+
+.sub-title {
+  font-family: "MarkSimonsonProximaNovaLight";
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  line-height: 1;
+}
+.title {
+  font-family: "VolteBold";
+  font-size: 60px;
+  color: #cc4b21;
+  border-left: 3px solid #cc4b21;
+  margin-top: 30px;
+  padding-left: 15px;
+  line-height: 1;
+}
+.section1-item1 {
+  padding: 0px;
+  
+}
+.section1-item1 a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  display: block;
+  z-index: 1;
+}
+.section1-item1 a {
+    z-index: 8;
+  }
+
+.section1-item1 a:after {
+  content: "";
+  background: url(../images/hover-image.png) no-repeat center;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.section1-item1 a:hover:after {
+  opacity: 1;
+}
+.section1-item1 img {
+  display: none;
+}
+.section1-item2 {
+  color: #fff;
+  background: #362f2d;
+  overflow: hidden;
+  padding: 20px 50px;
+}
+.tab-filter {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+}
+.tab-filter li {
+  color: gray;
+  border: 1px solid gray;
+  padding: 10px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tab-filter li.active {
+  color: white;
+  border: 1px solid white;
+}
+.tab-filter li:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.detail-filter {
+  margin-top: 30px;
+  min-height: 200px;
+}
+
+.detail-filter div {
+  display: none;
+}
+.detail-filter div.active {
+  display: block;
+}
+
+.see-more {
+  margin-bottom: 30px;
+}
+.see-more a {
+  font-size: 25px;
+  font-family: "VolteBold";
+  color: white;
+  border: 1px solid #cc2121;
+  background: #cc2121;
+  border-radius: 5px;
+  padding: 15px 30px;
+  
+}
+.see-more a:hover {
+  border: 1px solid #723939;
+  background: #723939;
+}
+
+.see-more a:first-child {
+   
+  }
+
+/***********************  
+********* Responsive *********
+************************/
+
+@media (max-width: 992px) {
+  .section1-item1 {
+    position: relative;
+    height: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .section1-item1 {
+    height: 300px;
+  }
+  .section1-item2 {
+    padding: 15px;
+  }
+  .tab-filter {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .sub-title {
+    font-size: 25px;
+  }
+  .see-more a {
+    font-size: 20px;
+  }
+}
