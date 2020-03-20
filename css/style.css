@@ -74,13 +74,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  outline: none;
-  display: block;
-  z-index: 1;
 }
-.section1-item1 a {
-    z-index: 8;
-  }
+
 
 .section1-item1 a:after {
   content: "";
@@ -157,9 +152,6 @@ body {
   background: #723939;
 }
 
-.see-more a:first-child {
-   
-  }
 
 /***********************  
 ********* Responsive *********
